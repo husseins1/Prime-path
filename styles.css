@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --primary-color: #254d4d;
+  --primary-color: #1D93D0;
   --text-dark: #171717;
   --text-light: #737373;
   --extra-light: #f4f6f5;
@@ -82,8 +82,9 @@ nav {
   background-color: var(--primary-color);
 }
 
-.nav__logo .logo {
-  color: var(--white);
+.nav__logo img {
+  width:4em;
+  border-radius:10%;
 }
 
 .nav__menu__btn {
@@ -109,6 +110,7 @@ nav {
   transform: translateY(-100%);
 }
 
+
 .nav__links.open {
   transform: translateY(0);
 }
@@ -120,6 +122,9 @@ nav {
 
 .nav__search {
   display: none;
+}
+.nav__search img, .nav__links img{
+  width:2rem;
 }
 
 .header__container {
@@ -433,6 +438,9 @@ nav {
     justify-content: space-between;
     gap: 2rem;
   }
+    .nav__links li:last-child {
+      display: none;
+    }
 
   .nav__header {
     flex: 1;

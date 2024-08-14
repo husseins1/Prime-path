@@ -14,11 +14,6 @@ navLinks.addEventListener("click", (e) => {
   menuBtnIcon.setAttribute("class", "ri-menu-line");
 });
 
-const navSearch = document.getElementById("nav-search");
-
-navSearch.addEventListener("click", (e) => {
-  navSearch.classList.toggle("open");
-});
 
 const scrollRevealOption = {
   distance: "50px",
@@ -60,4 +55,8 @@ ScrollReveal().reveal(".about__card", {
 
 const swiper = new Swiper(".swiper", {
   loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
 });
