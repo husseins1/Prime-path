@@ -140,6 +140,11 @@ nav {
   max-width: 900px;
   margin-left: auto;
 }
+.ar .header__image img{
+  margin-left: unset;
+  margin-right: auto;
+  transform:scaleX(-1);
+}
 
 .header__content {
   grid-area: 1/1/2/2;
@@ -160,6 +165,7 @@ nav {
   font-weight: 600;
   font-family: var(--header-font);
   color: var(--primary-color);
+  
 }
 
 .header__content p {
